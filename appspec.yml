@@ -1,0 +1,20 @@
+version: 0.0
+os: linux
+
+files:
+    - sourc: /
+      destination: /usr/src/app
+
+hooks:
+    BeforeInstall:
+        - location: hooks/before_install.sh
+          timeout: 300
+          runas: root
+    AfterInstall:
+        - location: hooks/application_install.sh
+          timeout: 300
+          runas: root
+    ValidateService:
+        - location: hooks/validate_service
+          timeout: 300
+          runas: root
