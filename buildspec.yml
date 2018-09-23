@@ -1,15 +1,20 @@
-versin: 0.2
+version: 0.2
 
 phases:
   install:
     commands:
-      - npm install
+      - |
+        npm install
+
   pre_build:
     commands:
-      - npm test
+      - |
+        npm test
+
   build:
     commands:
-      - echo 'no build'
+      - |
+        echo 'no build'
 
 artifacts:
   files:
