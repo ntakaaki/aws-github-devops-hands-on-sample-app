@@ -2,7 +2,7 @@ version: 0.0
 os: linux
 
 files:
-    - sourc: /
+    - source: /
       destination: /usr/src/app
 
 hooks:
